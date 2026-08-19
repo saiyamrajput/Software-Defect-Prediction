@@ -58,3 +58,12 @@ Hypothesis 1 (H1): Machine-learning classifiers using KC1 software metrics will 
 Hypothesis 2 (H2): Logistic Regression and Random Forest will exhibit different defect-prediction performance when evaluated using the same data split and evaluation protocol.
 Hypothesis 3 (H3): Evaluation metrics that focus on the defective class will reveal differences in classifier performance that accuracy alone may obscure.
 
+
+Day 2 Finding:
+
+Preprocessing Decisions:
+
+For this project, I am using the KC1, CM1 and PC1 datasets. The dataset class distributions are imbalanced, and I am using this imbalance data set for the initial experiment.
+The feature columns are the first 21 columns (software metric features) and column 22 (defects) is the target variable. I choose 80/20 to split the data, 80% for training and 20% for testing and stratify so that imbalance is maintained in training and test datasets too. I also used fixed random state values so that the split is reproducible, and we don’t get different rows every time code is executed.
+There are no missing values in any dataset used in the project, so missing-value imputation is not necessary. There is also no need for categorical encoding as our data consists of numeric software metrics instead of categories. Some of the attributes of the software modules are right skewed but that does not give us the exact reason to transform them. Also, correlation does not imply causation.
+For scaling of values for logistic regression pipeline, always apply the preprocessing to the data set used for training after stratified split. Scaler is fitted using training data only, and lastly these values are used to transform both training and test features.

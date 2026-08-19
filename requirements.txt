@@ -1,6 +1,5 @@
-The following libraries are needed:
-
-* python3
-* jupyter
-* pandas
-* scipy.io
+pandas
+scipy 
+jupyter 
+ipykernel
+scikit-learn
