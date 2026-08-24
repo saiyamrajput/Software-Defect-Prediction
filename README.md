@@ -79,11 +79,11 @@ The comparison shows that CM1, KC1 and PC1 have a very similar feature structure
 
 ## Research Question (RQ):
 
-How effectively can software metrics in the KC1 dataset predict whether a software module is defective?
+How effectively can software metrics in the KC1, CM1 and PC1 dataset predict whether a software module is defective?
 
 ## Hypothesis 1 (H1):
 
-Machine-learning classifiers using KC1 software metrics will identify defective software modules better than a majority-class baseline.
+Machine-learning classifiers using KC1, CM1 and PC1 software metrics will identify defective software modules better than a majority-class baseline.
 
 ## Hypothesis 2 (H2):
 
