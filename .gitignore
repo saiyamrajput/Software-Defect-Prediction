@@ -24,10 +24,7 @@ Thumbs.db
 .env.*
 
 # Local data
-data/raw/
-data/*.arff
-
-# Generated outputs
+data/
 
 # Python tooling
 .pytest_cache/
